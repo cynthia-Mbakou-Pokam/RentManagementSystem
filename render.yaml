@@ -1,0 +1,13 @@
+# Render Blueprint (optional): sync from repo or copy settings into the dashboard.
+# Use a Web Service (Node), not a Static Site, for this Next.js app.
+services:
+  - type: web
+    name: rent-management-web
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "22"

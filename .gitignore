@@ -403,3 +403,6 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio
+
+# Monorepo root has no npm deps; ignore root lockfile so Next.js (in /web) does not pick the wrong workspace root
+/package-lock.json

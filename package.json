@@ -1,0 +1,11 @@
+{
+  "name": "rent-management",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "build": "npm install --prefix web && npm run build --prefix web",
+    "start": "npm run start --prefix web"
+  }
+}
